@@ -11,8 +11,8 @@ defmodule Elevio.Articles do
   @type response :: {atom, map}
 
   defmodule ListAllParams do
-    @type t :: %__MODULE__{page_number: integer, page_size: integer}
-    defstruct page_number: 1, page_size: 100
+    @type t :: %__MODULE__{page: integer, page_size: integer}
+    defstruct page: 1, page_size: 100
   end
 
   @doc """
